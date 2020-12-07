@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width,initial-scale=1.0">
+        <title>
+           Net Banking
+        </title>
+        <style>
+            body
+            {
+                font-size: 18px;
+                background-color:white;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            h1
+            {
+              text-align: center;
+              color:brown;
+            }
+            form
+            {
+                width : 450px;
+                padding : 20px;
+                margin: 5px auto ;
+            }
+            input
+            {
+                display:block;
+                border:2px solid black;
+                padding:10px;
+                width:100%;
+                border-radius: 5px;
+            }
+            input.inline
+            {
+                display:inline-block;
+                width: auto;
+                padding-right: 5px;
+            }
+            .row
+            {
+                padding-bottom: 20px;
+            }
+            .err
+            {
+                font-size:1em;
+                color :indianred;
+            }
+            a
+            {
+                font-size:20px ;
+            }
+            .card
+            {
+                width:10px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="" nonvalidate="true" onsubmit="return validate()">
+            <h1>Net Banking</h1>
+            <div class="row">
+                <input type="text" name="customer" id="customer" placeholder="Customer ID"/>
+            </div>
+            
+                <input class="card" type="radio" name="card"/>Credit Card
+                <input class="card" type="radio" name="card"/>Debit Card
+            
+            <div class="row">
+                </br>
+                <input type="text" name="valid" id="valid" placeholder="Valid Through"/>
+            </div>
+            <div class="row">
+                <input type="password" name="password" id="password" placeholder="Password/PIN"/>
+            </div>
+            <div style="width:30%; float:left; display: block; padding:20px;" > 
+                <a style="text-decoration:none" href=""> <p style="color:green">Proceed</p>
+            </div>
+                <a style="text-decoration:none" href="6_ForgotPassword.html"> <p style="color:blue">Forgot Password/Reset Password</p>
+                <a style="text-decoration:none" href="5_FirstTimeUser.html"> <p style="color:blue">First Time User?Register Now</p>
+        </form>
+    </body>
+</html>

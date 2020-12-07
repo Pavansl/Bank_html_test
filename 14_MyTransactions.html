@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width,initial-scale=1.0">
+        <title>
+            My Transactions
+        </title>
+        <style>
+            body
+            {
+                font-size: 18px;
+                background-color:white;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            h1
+            {
+              text-align: center;
+              color:red;
+            }
+            form
+            {
+                width : 450px;
+                padding : 20px;
+                border : 2px solid black;
+                margin: 5px auto ;
+            }
+            input
+            {
+                display:block;
+                border:2px solid black;
+                padding:10px;
+                width:90%;
+                border-radius: 5px;
+            }
+            input.inline
+            {
+                display:inline-block;
+                width: auto;
+                padding-right: 5px;
+            }
+            .row
+            {
+                padding-bottom: 20px;
+            }
+            .err
+            {
+                font-size:1em;
+                color :indianred;
+            }
+            button
+            {
+                font-size: 20px;
+                width:70%;
+                height:40px;
+                background-color:greenyellow;
+            }
+            a
+            {
+                font-size:20px ;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="" nonvalidate="true" onsubmit="return validate()">
+            <h1>To check Transaction Details</h1>
+            <div class="row">
+                <input type="text" name="customer" id="customer" placeholder="Customer ID"/>
+            </div>
+            <div class="row">
+                <input type="password" name="password" id="password" placeholder="Password/PIN"/>
+            </div>
+            <div style="width:30%; float:left; display: block; padding:20px;" > 
+                <button style="text-align: center;">SUBMIT</button>
+            </div>
+                <a style="text-decoration:none" href="6_ForgotPassword.html"> <p style="color:blue">Forgot Password/Reset Password</p>
+                <a style="text-decoration:none" href="5_FirstTimeUser.html"> <p style="color:blue">First Time User?Register Now</p>
+        </form>
+    </body>
+</html>
